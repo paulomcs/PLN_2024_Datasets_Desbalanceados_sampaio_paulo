@@ -1,6 +1,6 @@
-PLN 2024 - Atividade 3:
+PLN 2024 - Atividade 3: Uso de Datasets Desbalanceados
 =====================================
-** Uso de Datasets Desbalanceados**
+
 **Autor:** *Paulo M.*
 
 # Descrição do Projeto
