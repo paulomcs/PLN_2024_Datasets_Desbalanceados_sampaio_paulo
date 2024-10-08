@@ -8,51 +8,44 @@ Este projeto faz parte da Atividade 3 da disciplina de Processamento de Linguage
 
 # O projeto inclui:
 
-Pré-processamento dos dados utilizando Pandas.
-Implementação de modelos de classificação Naive Bayes com Scikit-learn.
-Utilização de embeddings de linguagem com GPT-2.
-Busca e indexação eficiente com FAISS.
-Avaliação de desempenho utilizando métricas Micro e Macro F1 Score.
-Dataset Utilizado
-O dataset utilizado para esta atividade é o Fake News Dataset, contendo notícias com títulos, textos, e categorias associadas. Ele pode ser encontrado no seguinte link:
+* Pré-processamento dos dados utilizando Pandas.
+* Implementação de modelos de classificação Naive Bayes com Scikit-learn.
+* Utilização de embeddings de linguagem com GPT-2.
+* Busca e indexação eficiente com FAISS.
+* Avaliação de desempenho utilizando métricas Micro e Macro F1 Score.
 
-[Fake News Dataset](Dataset: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+## Dataset Utilizado
+O dataset utilizado para esta atividade é o Fake News Dataset, contendo notícias com títulos, textos, e categorias associadas. Ele pode ser encontrado no seguinte link: [Fake News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
 
-# Tecnologias e Bibliotecas Utilizadas
-Python 3.8+
-Pandas: Manipulação e análise de dados.
-Scikit-learn: Implementação do Naive Bayes e métricas de avaliação.
-Scikit-multilearn: Para realizar a divisão dos dados em conjuntos de treinamento, validação e teste.
-Hugging Face GPT-2: Geração de embeddings de linguagem.
-FAISS: Indexação e busca eficiente de embeddings.
-Matplotlib/Seaborn: Para visualização de gráficos.
+## Tecnologias e Bibliotecas Utilizadas
+* Python 3.8+
+* Pandas: Manipulação e análise de dados.
+* Scikit-learn: Implementação do Naive Bayes e métricas de avaliação.
+* Scikit-multilearn: Para realizar a divisão dos dados em conjuntos de treinamento, validação e teste.
+* Hugging Face GPT-2: Geração de embeddings de linguagem.
+* FAISS: Indexação e busca eficiente de embeddings.
+* Matplotlib/Seaborn: Para visualização de gráficos.
 
-# Etapas Realizadas
-(1) Carregamento e Análise dos Dados:
-
+## Etapas Realizadas
+### (1) Carregamento e Análise dos Dados:
 * Listagem dos campos e labels presentes no dataset.
 * Contagem de registros com e sem labels.
 
-(2) Pré-processamento:
-
+### (2) Pré-processamento:
 * Remoção de duplicados.
-* Criação de novas colunas, como a que indica a presença ou ausência de * labels.
+* Criação de novas colunas, como a que indica a presença ou ausência de labels.
 * Concatenar campos textuais para otimizar a análise de texto.
 
-(3) Divisão do Dataset:
-
+### (3) Divisão do Dataset:
 * Dividido em conjunto de treinamento, validação e teste utilizando Scikit-multilearn.
 
-(4) Classificação com Naive Bayes:
-
+### (4) Classificação com Naive Bayes:
 * Aplicação de Naive Bayes com OneVsRest para classificação multiclasse.
 * Avaliação utilizando as métricas Micro e Macro F1 Score.
 
-(5) Embeddings com GPT-2 e Indexação FAISS:
-
+### (5) Embeddings com GPT-2 e Indexação FAISS:
 * Geração de embeddings com GPT-2 para representações mais robustas dos textos.
 * Indexação com FAISS e busca eficiente de registros similares.
 
-(6) Avaliação e Comparação de Resultados:
-
+### (6) Avaliação e Comparação de Resultados:
 * Comparação entre os resultados do Naive Bayes e o modelo baseado em embeddings GPT-2, utilizando FAISS.
